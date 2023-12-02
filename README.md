@@ -6,6 +6,8 @@ This project is a movie management system that allows users to perform various a
 - User authentication with JWT tokens.
 - Refresh token implementation
 - CRUD operations for managing movies.
+- For running tests used mocha, chai, chai-http jwt
+- 
 
 - database used MYSQL , sequelize, backend framework expressjs, 
 
