@@ -41,7 +41,7 @@ async function login(loginDetails) {
       throw new Error(`Incorrect username or password`);
     }
 
-    const token = jwt.sign({ sub: user.id }, secret, { expiresIn: "1m" });
+    const token = jwt.sign({ sub: user.id }, secret, { expiresIn: "20m" });
     const refreshToken = await jwt.sign({ sub: user.id }, secret, {
       expiresIn: "7d",
     });
@@ -79,7 +79,7 @@ async function refreshToken(refresh_token, userId) {
         }
 
         const newAccessToken = jwt.sign({ sub: decoded.sub }, secret, {
-          expiresIn: "1m",
+          expiresIn: "20m",
         });
 
         resolve(newAccessToken);

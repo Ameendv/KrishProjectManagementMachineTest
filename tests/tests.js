@@ -1,6 +1,6 @@
 const chai = require("chai");
 const chaiHttp = require("chai-http");
-const app = require("../server"); // Update with your actual app entry file
+const app = require("../server"); 
 const expect = chai.expect;
 const jwt = require("jsonwebtoken");
 const config = require("../config");
@@ -34,7 +34,7 @@ describe("API", () => {
     }
   });
 
-  const token = jwt.sign({ sub: 1 }, config.secret, { expiresIn: "1m" });
+  const token = jwt.sign({ sub: 1 }, config.secret, { expiresIn: "10m" });
   console.log(token, "token is getting");
 
   describe("POST /createUser", () => {
