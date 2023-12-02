@@ -14,7 +14,8 @@ This project is a movie management system that allows users to perform various a
 - ## Getting Started
 
 ### Prerequisites
-- Node.js and npm installed.
+- Node.js and npm installed
+- install mysql, data base details are provided in env file, and then config setup in config.js file, from 
 ### Installation
 
 1. Clone the repository:
