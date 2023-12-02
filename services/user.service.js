@@ -82,7 +82,7 @@ async function refreshToken(refresh_token, userId) {
           expiresIn: "20m",
         });
 
-        resolve(newAccessToken);
+        resolve({accessToken:newAccessToken});
       }
     });
   });
